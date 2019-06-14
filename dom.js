@@ -1,6 +1,6 @@
 // EXAMINE THE DOCUMENT OBJECT //
 
-console.dir(document);
+//console.dir(document);
 
 //console.dir(document.URL);
 //document.title = "Hello world";
@@ -8,14 +8,21 @@ console.dir(document);
 //document.all[15].textContent = "my bad";
 // console.log(document.all[10]);
 // // document.all[10].textContent = 'Hello';
-// console.log(document.forms[0]);
-// console.log(document.links);
-// console.log(document.images);
 
 // GETELEMENTBYID //
-// console.log(document.getElementById('header-title'));
+var headerTitle = document.getElementById("header-title");
+var header = document.getElementById("main-header");
+header.style.borderBottom = "solid 2px #003";
+//console.log(headerTitle);
+//console.log(headerTitle.innerText);
+headerTitle.innerHTML = "<h3>This is innerHTML</h3>";
+headerTitle.style.borderTop = "solid 1px #fff";
+var iteams = document.getElementsByClassName("list-group-item");
+//console.log(iteams);
+console.log(iteams[1]);
+iteams[1].textContent = "testing";
 // var headerTitle = document.getElementById('header-title');
-// var header = document.getElementById('main-header');
+// var header = document.get    ElementById('main-header');
 // console.log(headerTitle);
 // headerTitle.textContent = 'Hello';
 // headerTitle.innerText = 'Goodbye';
